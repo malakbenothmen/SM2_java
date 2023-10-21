@@ -1,0 +1,22 @@
+package td3_ex2;
+
+public class Dictionnaire {
+  private int nbMots;
+  private MotDico[] dico;
+  private String nom;
+  
+  Dictionnaire(String nom,int nb)
+  {this.nbMots=nb;
+   dico=new MotDico[this.nbMots];}
+  
+  void ajouterMot(MotDico m)
+  { 
+	  dico[nbMots]=m;
+	  nbMots++;}
+  
+  void supprimerMot(String ch)
+  {int i=0;
+  while(ch!=dico[i].getMot() && i<=nbMots) {
+	  i++;
+  }}
+}

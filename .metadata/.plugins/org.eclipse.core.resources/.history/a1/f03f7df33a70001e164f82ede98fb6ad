@@ -1,0 +1,18 @@
+package TD4;
+
+public class testLib {
+
+	public static void main(String[] args) {
+		Librairie l=new Librairie(10);
+		Livre l1=new Livre();
+		Livre l2=new Roman();
+		Livre l3=new magazine();
+		Livre l4=new Roman();
+		Livre l5=new magazine();
+		Livre l6=new magazine();
+		Livre l7=new Roman();
+		Livre l8=new Livre();
+
+	}
+
+}

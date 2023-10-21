@@ -1,0 +1,16 @@
+package TD4;
+
+public class Roman extends Livre {
+	private String auteur,editeur;
+
+ 
+
+
+
+
+
+/*@Override
+public String toString()
+{return super.toString()+" Auteur: "+this.auteur+" Editeur: "+this.editeur ;}
+*/
+}

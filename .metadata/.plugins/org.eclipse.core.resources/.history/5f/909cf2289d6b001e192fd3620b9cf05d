@@ -1,0 +1,11 @@
+package td3_ex2;
+
+public class Dictionnaire {
+  private int nbMots;
+  private MotDico[] dico;
+  private String nom;
+  
+  Dictionnaire(String nom,int nb)
+  {this.nbMots=nb;
+   dico=new MotDico[this.nbMots];}
+}

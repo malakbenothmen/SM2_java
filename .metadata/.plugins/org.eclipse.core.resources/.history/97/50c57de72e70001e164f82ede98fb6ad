@@ -1,0 +1,16 @@
+package TD4;
+
+public class magazine extends Livre{
+	private String moisparu;
+
+	
+	
+	
+	@Override
+	public String toString()
+	{return super.toString()+" le mois de parution: "+this.moisparu;
+	
+	}
+	
+	
+}

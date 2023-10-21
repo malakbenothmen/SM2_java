@@ -1,0 +1,46 @@
+package td3;
+import java.util.Scanner;
+public class CalculMoyenne {
+
+	public static void main(String[] args) {
+		
+
+		
+		/*Scanner scanner = new Scanner(System.in);
+		int nb=scanner.nextInt();
+		if (nb>0 && nb<=Tab.getNMAX())*/
+		int nb=5;
+		int nbEtud=10;
+		float[] noteCtrl=new float[nb];
+		float[] noteExam=new float[nb];
+		float[] tabMoy=new float[nbEtud];
+		
+		
+		
+		Tab.remplir(noteCtrl);
+		Tab.remplir(noteExam);
+		Tab.lister(noteCtrl);
+		Tab.lister(noteExam);
+		
+		for(int i=0;i<nbEtud;i++)
+
+		{ tabMoy=Tab.additionner(noteCtrl,Tab.produit(2,noteExam));}
+		
+		System.out.println("les moyennes de tous les etudiants : \n");
+		Tab.lister(tabMoy);
+		
+        float moyClass=Tab.somme_element(tabMoy)/30;
+		System.out.println("la moyenne de la classe est : "+moyClass);
+		
+		
+		
+			
+		
+		
+		
+		
+		
+		
+	}
+
+}

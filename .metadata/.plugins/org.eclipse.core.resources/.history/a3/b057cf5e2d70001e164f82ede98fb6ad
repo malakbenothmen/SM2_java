@@ -1,0 +1,10 @@
+package TD4;
+
+public class Livre {
+	protected String title,domaine;
+	protected int id,nbPage;
+	protected final double TVA=0.1;
+	
+	
+
+}

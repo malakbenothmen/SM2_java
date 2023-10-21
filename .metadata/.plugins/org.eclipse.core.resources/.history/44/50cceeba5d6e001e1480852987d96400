@@ -1,0 +1,16 @@
+package tp5;
+
+public class Vendeur extends Salerie {
+	private double vente;
+	private double pourcentage;
+	
+	
+	Vendeur(int m,String nom,double rec,double v,double pour)
+	{super(m,nom,rec);
+	this.vente=v;
+	this.pourcentage=pour;}
+	
+	
+	
+
+}

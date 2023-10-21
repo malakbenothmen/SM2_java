@@ -1,0 +1,33 @@
+package tp5;
+
+public class Entreprise {
+	public static void main(String[] args) {
+		Salerie tabSalarie[];
+		tabSalarie=new Salerie[5];
+		Salerie s=new Employe(12345,"Walid",2002,15,4);
+		Salerie s1=new Vendeur(23445,"Yessine",2007,1000,0.1);
+		Salerie s2=new Vendeur(65478,"Nassime",2000,700,0.1);
+		Salerie s3=new Employe(87698,"Aymen",2003,19,5);
+		Salerie s4=new Employe(12345,"Khaled",2008,7,4);
+		tabSalarie[0]=s;
+		tabSalarie[1]=s1;
+		tabSalarie[2]=s2;
+		tabSalarie[3]=s3;
+		tabSalarie[4]=s4;
+		System.out.println("**********************Liste des Employés****************");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+
+	}
+
+}

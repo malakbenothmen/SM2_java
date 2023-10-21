@@ -1,0 +1,25 @@
+package td3_ex2;
+
+public class MotDico {
+  private int num;
+  private String mot;
+  private String def;
+  
+  
+  String getMot()
+  {return mot;}
+  
+  String getDefinition()
+  {return def;}
+  
+  void setDefintion (String s)
+  {this.def=s;}
+  
+  void setMot (String s)
+  {this.mot=s;}
+  
+  boolean synonyme (MotDico m)
+  {return this.def==m.def;}
+  
+  
+}
