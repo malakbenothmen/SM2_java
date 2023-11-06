@@ -1,5 +1,0 @@
-package TD4;
-
-public class Roman extends Livre {
-	private String auteur,editeur;
-}

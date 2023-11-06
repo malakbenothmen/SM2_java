@@ -1,6 +1,0 @@
-package TD4;
-
-public class magazine extends Livre{
-	private String moisparu;
-
-}

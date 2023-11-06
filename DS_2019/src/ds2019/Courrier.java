@@ -15,13 +15,17 @@ public class Courrier {
  boolean estVlide()
  {return this.add!="";}
 
+ String getMode()
+ {
+ if(this.mode)
+ return "express";
+else 
+ return "Normal";
+ }
+ 
  void decrire()
- {   String ch="";
-	 if(this.mode)
-	 ch="express";
- else 
-	 ch="Normal";
-	 System.out.println("Courrier de type: "+this.getClass().getSimpleName()+", adresse: "+this.add+", mode d'expedition: "+ch+", tarif: "+this.affranchir());}
+ {  
+	 System.out.println("Courrier de type: "+this.getClass().getSimpleName()+", adresse: "+this.add+", mode d'expedition: "+this.getMode()+", tarif: "+this.affranchir());}
  
  double affranchir()
  {double montant=0;

@@ -18,7 +18,7 @@ public class BoiteCourrier {
 	
 	
 	
-	void affranchir()
+void affranchir()
 	{double s=0;
 	for(int i=0;i<this.n;i++)
 		{s+=tab[i].affranchir();}

@@ -7,8 +7,9 @@ public class Vetement {
 	protected String color;
 	protected float HT;
 	protected final float TVA=0.18f;
+	Vetement(){}
 	
-	Vetement (String lib, float pht, String code, String c)
+	Vetement (String code,String lib, float pht, String c)
 	{this.libelle=lib;
 	this.HT=pht;
 	this.code=code;

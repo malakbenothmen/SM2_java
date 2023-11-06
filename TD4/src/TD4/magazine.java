@@ -17,6 +17,8 @@ public class magazine extends Livre{
 	{return super.toString()+", le mois de parution: "+this.moisparu;
 	
 	}
+	
+	
 	double calculePrix(int bonus)
 	{return (0.35*this.nbPage)*(1+this.TVA)+bonus;
 	}

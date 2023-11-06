@@ -8,7 +8,13 @@ public class Film {
 	String pays;
 	int duree;
 	int nbplaces;
-	
+
+	Film(String title,String r,String pays,int d)
+	{
+	this.pays=pays;
+	this.title=title;
+	this.realisateur=r;
+	this.duree=d;}
 	
 	int getNbplaces()
 	{return this.nbplaces;}
@@ -19,36 +25,28 @@ public class Film {
 		this.nbplaces=nb;}
 	
 	public String toString()
-	{return this.title+" "+this.realisateur+" ("+this.pays+") -"+this.duree+"min";}
-	
-	Film(String title,String pays,int d)
-	{
-	this.nbplaces++;
-	this.pays=pays;
-	this.title=title;
-	this.duree=d;}
-	
-	 float totalVenteBillets ()
-	 {double mont=0; 
-	do{
-	Scanner scanner=new Scanner(System.in);
-	 int nb= scanner.nextInt();}
-	while (nb<=this.nbplaces && nb>=0);
-	mont=nb*2+(this.nbplaces+nb)*3;
-	
-	 }
-	
-	
-	
-	
-	 
-	 }
-	
-	
-	
-	
-	
-	
+	{return this.title+" de "+this.realisateur+" ("+this.pays+") -"+this.duree+"min.";}
 	
 
-}
+	
+	 float totalVenteBillets ()
+	 {float mont=0; 
+	 int nbEtud;
+	 Scanner scanner=new Scanner(System.in);
+	/*do{
+	System.out.println("Saisir le nombre des etudiants:");
+	 nbEtud= scanner.nextInt();}
+	while (nbEtud>this.nbplaces || nbEtud<0);*/
+	 System.out.println("Saisir le nombre des etudiants:");
+	 nbEtud= scanner.nextInt();
+	 while (nbEtud>this.nbplaces || nbEtud<0)
+	 {	 System.out.println("SVP !! Saisir un nombre des etudiants entre 0 et "+this.nbplaces);
+	 nbEtud= scanner.nextInt();}
+	mont=(nbEtud*2.0f)+((this.nbplaces-nbEtud)*3.0f);
+	
+	return mont;
+	 }
+	 }
+
+	
+	

@@ -19,7 +19,7 @@ System.out.println(",Poid:"+this.poid+", Volume: "+this.vol);}
 
 double affranchir()
 {double montant=0;
-if(this.estVlide())
+if(super.estVlide())
 	montant=0.25*this.vol+this.poid;
 {if(this.mode)
 	 montant=montant*2;

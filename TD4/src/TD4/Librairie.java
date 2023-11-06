@@ -1,5 +1,5 @@
 package TD4;
-
+import java.util.Scanner;
 public class Librairie {
 	private Livre liste[];
 	private int capacite;
@@ -17,9 +17,17 @@ public class Librairie {
 	void inventaire()
 	{   System.out.println("***la liste de tous les livres***\n");
 		for(int i=0;i< nb;i++)
-		{if (liste[i] != null)
-		System.out.println(liste[i]+" Prix: "+String.format("%.4f",liste[i].calculePrix()));}
+		 {if (liste[i] != null)
+			{if(liste[i] instanceof magazine)
+			{  Scanner sc=new Scanner(System.in);
+			   int bonnus=sc.nextInt();
+				System.out.println(liste[i]+" Prix: "+String.format("%.4f",((magazine)liste[i]).calculePrix(bonnus)));}
+			
+			else
+				 System.out.println(liste[i]+" Prix: "+String.format("%.4f",liste[i].calculePrix()));
+		}}
 	}
+	
 	void inventaire(String categ)
 	{	System.out.println("\n ***la liste des "+categ+"***\n");
 		    boolean exicts=false;
