@@ -34,7 +34,7 @@ public class Stock {
                 if (tabOp[i] instanceof Vente && tabOp[i].art.equals(a)) {
                     Vente vente = (Vente) tabOp[i]; 
                     double prixVente = vente.getPrixVente();
-                    if (meilleur== -1 || prixVente < meilleur) {
+                    if (meilleur== -1 || prixVente > meilleur) {
                         meilleur= prixVente;
                     }
                 }
